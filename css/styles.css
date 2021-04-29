@@ -58,6 +58,13 @@ body{
 .right-nav li{
 	margin-left: 30px;
 }
+.left-link button{
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 0px !important;
+}
 .right-nav button{
 	background-color: transparent;
 	border: none;
@@ -195,9 +202,10 @@ body{
 	font-family:Luminari-Regular; 
 	padding-top: 10px;
 }
-.full-with-img .h-3{
-	background-color: rgba(255,255,255, 0.5);
-	padding: 10px 0px;
+.full-with-img .h-3 {
+    background-color: rgba(0,0,0, 0.5);
+    padding: 10px 0px;
+    color: #e4e4e4;
 }
 .full-with-img img{
 	width: 100%;
@@ -231,6 +239,10 @@ body{
 	background-color: #0d0d0d;
 	color: #fff;
 }
+.four-section .inner-flex>*{
+	padding: 5px; 
+}
+
 .four-img img{
 	width: 100%;
 }
@@ -254,14 +266,16 @@ body{
 	background-color: #0a0a0a;
 	padding: 2.5rem 0px;
 }
+.last-section .card {
+	width: 100%; 
+	background-color: #0d0d0d;
+	color: #fff !important;
+}
+.last-section .card:hover{
+	box-shadow: 0 4px 8px 0px #4444;
+}
 .last-section img{
 	width: 100%;
-}
-.last-section .last-text{
-	width: 100%;
-	background-color: rgba(255,255,255, 0.5);
-	padding: 5px 10px;
-	color: #fff;
 }
 .footer{
 	width: 100%;
@@ -274,7 +288,7 @@ body{
 	padding: 5rem 0px;
 }
 .foot-mar-t img{
-	width: 100%;
+	width: 60%;
 }
 .foot-nav-list a>*{
 	padding-right: 15px;
@@ -297,6 +311,9 @@ body{
 	padding: 5px;
 	margin-bottom: 10px;
 }
+.follow .input-group input:first-child{background-color: transparent; border-bottom: 1px solid #0d0d0d;}
+.follow .input-group input:last-child{ border-radius: 25px !important;}
+/*.follow .input-group>*{border: 1px solid red !important;}*/
 .follow .input-group input{border:none;}
 .follow .input-group button{
 	border: none;

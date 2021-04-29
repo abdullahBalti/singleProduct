@@ -12,6 +12,13 @@
 			border: 1px solid #fff !important;
 			border-radius: 50px;
 		}
+		.header{
+			width: 100%;
+			height: 100vh;
+			background-image: url('../images/full-width-2.jpg');
+			background-size: cover;
+			background-position: center;
+		}		
 	</style>
 </head>
 <body>
@@ -25,29 +32,30 @@
 					      <span class="navbar-toggler-icon"></span>
 					    </button>
 					    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-					      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					      <ul class="navbar-nav me-auto mb-2 mb-lg-0 left-link">
+							<li class="nav-item"><button  id="onclick" class="nav-link"><i class="fas fa-bars"></i></button></li>	
 					        <li class="nav-item">
-					          <a class="nav-link" aria-current="page" href="#">Home</a>
+					          <a class="nav-link" aria-current="page" href="index.html">Home</a>
 					        </li>
 					        <li class="nav-item">
-					          <a class="nav-link" aria-current="page" href="#">Shop</a>
+					          <a class="nav-link" aria-current="page" href="about.html">About Us</a>
 					        </li>
 					        <li class="nav-item">
-					          <a class="nav-link" aria-current="page" href="#">About Us</a>
-					        </li>
-					        <li class="nav-item">
-					          <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+					          <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
 					        </li>				        				        				        
 					      </ul>
 					    </div>
 					  </div>
 					</nav><!-- end of left nave -->
-					<div class="logo" style="width: 150px; "><img src="images/logo-bg.png" alt="" style="width: 100%"></div>
+					<div class="logo" style="width: 150px; ">
+						<a href="index.html">
+							<img src="images/logo-bg.png" alt="" style="width: 100%">
+						</a>
+					</div>
 					<div class="right-nav">
 						<ul class="right-nav-list d-flex justify-content-end">
-							<li><a href="#">Checkout</a></li>
+							<li><a href="checkout.html">Checkout</a></li>
 							<li><a href="#">Login</a></li>
-							<li><button  id="onclick"><i class="fas fa-bars"></i></button></li>
 						</ul>
 					</div>
 				</div>
@@ -58,10 +66,10 @@
 			<div class="slide-box container">
 				<div class="left-box">
 					<h2 class="Light">QoQa Bons cadeaux</h2>
-					<p>Deviens dealer de fun Deviens dealer de fun!.</p>
+					<p style="font-size: 2rem;">Deviens dealer de fun Deviens dealer de fun!</p>
 				</div>
 				<div class="right-box">
-					<h3>What is Lorem Ipsum?</h3>
+					<h3>Deviens dealer de fun Deviens.</h3>
 					<p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
 				</div>
 			</div>
@@ -104,21 +112,23 @@
 	</div><!-- end of side nav -->
 	<!-- end of header area -->
 	<div class="next-section">
-		<div class="row">
-		    <div class="col-lg-6 col-md-12 mt-5 pt-3">
-		      <h2 class="p-2">Capteur de mouvement</h2>
-		      <p class="p-2">Un chef-d'œuvre n'a pas sa place dans une pièce vide.
-				Grâce à la technologie de capteur de mouvement à 
-				économie d'énergie du téléviseur The Frame, vous pouvez
-				 profiter de votre œuvre d'art préférée lorsque vous êtes 
-				dans la pièce et, lorsque vous la quittez, l'écran s'éteint
-				automatiquement.</p>
-				<p class="p-2">Des bordures de différente couleur peuvent être acquise séparément de l'offre QoQa. Ces bordures sont conçues pour se fixer facilement au cadre de votre téléviseur The Frame. Le téléviseur est livré sans bordure. (le visuel ci-contre montre une bordure non incluse dans l'offre QoQa)</p>
-		    </div>
-		    <div class="col-lg-6 col-md-12 mt-5">
-		    	<img src="images/third-img2.jpg" alt="" width="100%">
-		    </div>
-	  </div>
+		<div class="container">
+			<div class="row">
+			    <div class="col-lg-6 col-md-12 mt-5 pt-3">
+			      <h2 class="p-2">Capteur de mouvement</h2>
+			      <p class="p-2">Un chef-d'œuvre n'a pas sa place dans une pièce vide.
+					Grâce à la technologie de capteur de mouvement à 
+					économie d'énergie du téléviseur The Frame, vous pouvez
+					 profiter de votre œuvre d'art préférée lorsque vous êtes 
+					dans la pièce et, lorsque vous la quittez, l'écran s'éteint
+					automatiquement.</p>
+					<p class="p-2">Des bordures de différente couleur peuvent être acquise séparément de l'offre QoQa. Ces bordures sont conçues pour se fixer facilement au cadre de votre téléviseur The Frame. Le téléviseur est livré sans bordure. (le visuel ci-contre montre une bordure non incluse dans l'offre QoQa)</p>
+			    </div>
+			    <div class="col-lg-6 col-md-12 mt-5">
+			    	<img src="images/third-img2.jpg" alt="" width="100%">
+			    </div>
+		  	</div>
+	  	</div>
 	</div>
 	<div class="third-section">
 		<div class="container">
@@ -160,36 +170,33 @@
 			</div>						
 		</div>
 	</div><!-- end of third sec -->
-	<div class="four-section">
-		<div class="row">
-			<div class="col-md-6 four-img">
-				<img src="images/slide.jpg" alt="">
-			</div>
-			<div class="col-md-6">
-				<h2 class="p-5">Du smartphone au grand écran instantanément.</h2>
-				<div class="inner-flex d-flex justify-content-around">
-					<div class="fs-innter">
-						<h3>Mobile Mirroring.</h3>
-						n<p style="word-spacing: 5px; line-height: 30px;">Vous souhaitez transférer votre appel vidéo sur un écran plus grand ? L’application SmartThings sur votre appareil Android</p>
-					</div>
-					<div class="se-innter">
-						<h3>Boîtier One Connect</h3>
-						<p style="word-spacing: 5px; line-height: 30px;">Vous souhaitez transférer votre appel vidéo sur un écran plus grand ? L’application SmartThings sur votre appareil Android
-						</p>						
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!-- end of four section -->
-
+	<div class="next-section">
+		<div class="container">
+			<div class="row">
+			    <div class="col-lg-6 col-md-12 mt-5">
+			    	<img src="images/third-img.jpg" alt="" width="100%">
+			    </div>				
+			    <div class="col-lg-6 col-md-12 mt-5 pt-3">
+			      <h2 class="p-2">Capteur de mouvement</h2>
+			      <p class="p-2">Un chef-d'œuvre n'a pas sa place dans une pièce vide.
+					Grâce à la technologie de capteur de mouvement à 
+					économie d'énergie du téléviseur The Frame, vous pouvez
+					 profiter de votre œuvre d'art préférée lorsque vous êtes 
+					dans la pièce et, lorsque vous la quittez, l'écran s'éteint
+					automatiquement.</p>
+					<p class="p-2">Des bordures de différente couleur peuvent être acquise séparément de l'offre QoQa. Ces bordures sont conçues pour se fixer facilement au cadre de votre téléviseur The Frame. Le téléviseur est livré sans bordure. (le visuel ci-contre montre une bordure non incluse dans l'offre QoQa)</p>
+			    </div>
+		  	</div>
+	  	</div>
+	</div>
 	<footer class="footer">
 		<div class="container">
 			<div class="row foot-mar-t">
 				<div class="col-md-4 col-sm-12">
 					<img src="images/logo.png" alt="">
 				</div>
-				<div class="col-md-4 col-sm-12 d-flex flex-column align-items-center">
-					<h4>Links</h4>
+				<div class="col-md-4 col-sm-12 d-flex flex-column">
+					<h4 style="padding-left: 55px;">Links</h4>
 					<ul class="foot-nav-list d-flex flex-column">
 						<li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Home</a></li>
 						<li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Shop</a></li>
@@ -201,7 +208,7 @@
 					<h4>Follow us</h4>
 					<div class="input-group d-flex flex-column pt-5">						
 						<input type="text" name="" id="" placeholder="email">
-						<button class="">Submit</button>
+						<button class="" style="border-radius: 25px;">Submit</button>
 					</div>
 					<div class="foot-so-icon">
 						<i class="fab fa-facebook-f"></i>
@@ -213,9 +220,9 @@
 			</div>
 		</div><!-- end footer container -->
 		<div class="copyright">
-			<p>Copyright © 2021. All rights reserved. Xiom Software Company</p>
+			<p>Copyright © 2021. All rights reserved By <a href="https://www.redrhinoz.com" style="text-decoration: none; color:#fff;">Red Rhinoz</a> Creative Software.</p>
 		</div>
-	</footer>
+	</footer><!-- end of footer -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 	<script src="js/app.js"></script>

@@ -7,6 +7,15 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<style>
+		.header{
+			width: 100%;
+			height: 100vh;
+			background-image: url('../images/maxresdefault.jpg');
+			background-size: cover;
+			background-position: center;
+		}		
+	</style>	
 </head>
 <body>
 	<header class="header">
@@ -19,29 +28,28 @@
 					      <span class="navbar-toggler-icon"></span>
 					    </button>
 					    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-					      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					      <ul class="navbar-nav me-auto mb-2 mb-lg-0 left-link">
+							<li class="nav-item"><button  id="onclick" class="nav-link"><i class="fas fa-bars"></i></button></li>	
 					        <li class="nav-item">
-					          <a class="nav-link" aria-current="page" href="#">Home</a>
+					          <a class="nav-link" aria-current="page" href="index.html">Home</a>
 					        </li>
 					        <li class="nav-item">
-					          <a class="nav-link" aria-current="page" href="#">Shop</a>
+					          <a class="nav-link" aria-current="page" href="about.html">About Us</a>
 					        </li>
 					        <li class="nav-item">
-					          <a class="nav-link" aria-current="page" href="#">About Us</a>
-					        </li>
-					        <li class="nav-item">
-					          <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+					          <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
 					        </li>				        				        				        
 					      </ul>
 					    </div>
 					  </div>
 					</nav><!-- end of left nave -->
-					<div class="logo" style="width: 150px; "><img src="images/logo-bg.png" alt="" style="width: 100%"></div>
+					<div class="logo" style="width: 150px; ">
+						<a href="index.html"><img src="images/logo-bg.png" alt="" style="width: 100%"></a>
+					</div>
 					<div class="right-nav">
 						<ul class="right-nav-list d-flex justify-content-end">
-							<li><a href="#">Checkout</a></li>
+							<li><a href="checkout.html">Checkout</a></li>
 							<li><a href="#">Login</a></li>
-							<li><button  id="onclick"><i class="fas fa-bars"></i></button></li>
 						</ul>
 					</div>
 				</div>
@@ -153,15 +161,15 @@
 	</div><!-- end of third sec -->
 	<div class="four-section">
 		<div class="row">
-			<div class="col-md-6 four-img">
+			<div class="col-md-6 four-img" data-aos="zoom-in" data-aos-duration="3000">
 				<img src="images/slide.jpg" alt="">
 			</div>
-			<div class="col-md-6">
-				<h2 class="p-5">Du smartphone au grand écran instantanément.</h2>
+			<div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="3000">
+				<h2 class="py-5 pl-2">Du smartphone au grand écran instantanément.</h2>
 				<div class="inner-flex d-flex justify-content-around">
 					<div class="fs-innter">
 						<h3>Mobile Mirroring.</h3>
-						n<p style="word-spacing: 5px; line-height: 30px;">Vous souhaitez transférer votre appel vidéo sur un écran plus grand ? L’application SmartThings sur votre appareil Android</p>
+						<p style="word-spacing: 5px; line-height: 30px;">Vous souhaitez transférer votre appel vidéo sur un écran plus grand ? L’application SmartThings sur votre appareil Android</p>
 					</div>
 					<div class="se-innter">
 						<h3>Boîtier One Connect</h3>
@@ -181,33 +189,39 @@
 	<div class="last-section">
 		<div class="row">
 			<div class="col-md-4">
-				<img src="images/last-img1.jpg" alt="">
-				<div class="last-text">
-					<h4>Lorem ipsum dolor sit, amet.</h4>
+				<div class="card">
+				  <img src="images/last-img1.jpg" class="card-img-top" alt="...">
+				  <div class="card-body" style="color:#fff;">
+					<h4>Lorem ipsum dolor sit, amet.</h4>				  					    
+				  </div>
+				</div>				
+			</div>
+			<div class="col-md-4">
+				<div class="card" style="width: 100%; background-color: #0d0d0d; color:#fff;">
+				  <img src="images/last-img2.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+					<h4>Lorem ipsum dolor sit, amet.</h4>				  					    
+				  </div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<img src="images/last-img2.jpg" alt="">
-				<div class="last-text">
-					<h4>Lorem ipsum dolor sit, amet.</h4>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<img src="images/last-img3.jpg" alt="">
-				<div class="last-text">
-					<h4>Lorem ipsum dolor sit, amet.</h4>
+				<div class="card" style="width: 100%; background-color: #0d0d0d; color:#fff;">
+				  <img src="images/last-img3.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+					<h4>Lorem ipsum dolor sit, amet.</h4>				  					    
+				  </div>
 				</div>
 			</div>
 		</div>
-	</div><!-- end if last section -->	
+	</div><!-- end if last section -->
 	<footer class="footer">
 		<div class="container">
 			<div class="row foot-mar-t">
 				<div class="col-md-4 col-sm-12">
 					<img src="images/logo.png" alt="">
 				</div>
-				<div class="col-md-4 col-sm-12 d-flex flex-column align-items-center">
-					<h4>Links</h4>
+				<div class="col-md-4 col-sm-12 d-flex flex-column">
+					<h4 style="padding-left: 55px;">Links</h4>
 					<ul class="foot-nav-list d-flex flex-column">
 						<li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Home</a></li>
 						<li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Shop</a></li>
@@ -219,7 +233,7 @@
 					<h4>Follow us</h4>
 					<div class="input-group d-flex flex-column pt-5">						
 						<input type="text" name="" id="" placeholder="email">
-						<button class="">Submit</button>
+						<button class="" style="border-radius: 25px;">Submit</button>
 					</div>
 					<div class="foot-so-icon">
 						<i class="fab fa-facebook-f"></i>
@@ -231,9 +245,9 @@
 			</div>
 		</div><!-- end footer container -->
 		<div class="copyright">
-			<p>Copyright © 2021. All rights reserved. Xiom Software Company</p>
+			<p>Copyright © 2021. All rights reserved By <a href="https://www.redrhinoz.com" style="text-decoration: none; color:#fff;">Red Rhinoz</a> Creative Software.</p>
 		</div>
-	</footer>
+	</footer><!-- end of footer -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 	<script src="js/app.js"></script>
