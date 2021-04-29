@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QOQA</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<style>
+		form{
+			padding: 25px;
+		}
+		form input,select{
+			border: 1px solid red !important;
+			background-color: #0d0d0d !important;
+			border: 1px solid #444 !important;
+			color: #fff !important;			
+		}
+		.list-group li{
+			border: 1px solid #444;
+			background-color: #181818 !important;
+			color: #fff !important;
+		}
+		.card {
+			background-color: #181818;
+		}
+		.header{
+			width: 100%;
+			height: 100vh;
+			background-image: url('../images/five-img.jpg');
+			background-size: cover;
+			background-position: center;
+		}
+		.check-submit {
+    		color: #fff;
+	    	background-color: #0d0d0d;
+			padding: 10px 15px;
+			border: none; 
+			border-radius: 15px;
+		}
+		.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    		color: #fff;
+		    background-color: #0d0d0d !important;
+		}
+		.nav button{
+			color:#fff;
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+		.form-control:focus {
+		    color: #212529;
+		    background-color: #fff;
+		    /* border-color: #86b7fe; */
+		    outline: 0;
+		    box-shadow: none !important;
+		}				
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="main-nav">
+			<div class="container">		
+				<div class="top-nav">
+					<nav class="navbar navbar-expand-lg navbar-dark">
+					  <div class="container-fluid bg-col">
+					    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					      <span class="navbar-toggler-icon"></span>
+					    </button>
+					    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					      <ul class="navbar-nav me-auto mb-2 mb-lg-0 left-link">
+							<li class="nav-item"><button  id="onclick" class="nav-link"><i class="fas fa-bars"></i></button></li>	
+					        <li class="nav-item">
+					          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+					        </li>				        				        				        
+					      </ul>
+					    </div>
+					  </div>
+					</nav><!-- end of left nave -->
+					<div class="logo" style="width: 150px; ">
+						<a href="index.html"><img src="images/logo-bg.png" alt="" style="width: 100%">
+						</a>
+					</div>
+					<div class="right-nav">
+						<ul class="right-nav-list d-flex justify-content-end">
+							<li><a href="checkout.html">Checkout</a></li>
+							<li><a href="#">Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="container"></div> -->
+		<div class="slider">
+			<div class="slide-box container">
+				<div class="left-box">
+					<h2 class="Light">Gardena Set tondeuses robot connectées Sileno</h2>
+					<p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.</p>
+				</div>
+				<div class="right-box">
+					<h3>What is Lorem Ipsum?</h3>
+					<p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+				</div>
+			</div>
+			<div class="bottom-box">bottom box</div>
+		</div>
+	</header><!-- end of header -->
+	<div class="side-nav">
+		<div class="sid-logo">			
+			<img src="images/logo.png" alt="" style="width: 70%">
+		</div>
+		<hr>
+		<nav class="side-navbar">
+			<ul class="side-nav-list" style="line-height: 45px;">
+				<li><i class="fas fa-calendar-alt" style="padding-right: 20px;"></i>
+					<a href="#">SE CONNERCTER</a>
+				</li>
+				<li><i class="fas fa-calendar-alt" style="padding-right: 20px;"></i>
+					<a href="index.html">OFFER DU JOUR</a>
+				</li>
+				<li><i class="fas fa-calendar-alt" style="padding-right: 20px;"></i>
+					<a href="offers.html">HISTORIQUE DES OFFRES</a>
+				</li>
+				<li><i class="fas fa-calendar-alt" style="padding-right: 20px;"></i>
+					<a href="bons-cadeaux.html">BONS CADEAUX</a>
+				</li>
+				<li><i class="fas fa-calendar-alt" style="padding-right: 20px;"></i>
+					<a href="legal_notices.html">MENTIONS LEGALES</a>
+				</li>
+				<li><i class="fas fa-calendar-alt" style="padding-right: 20px;"></i>
+					<a href="concept.html">CONCEPT</a>
+				</li>
+				<li><i class="fas fa-calendar-alt" style="padding-right: 20px;"></i>
+					<a href="brands.html">NOS MARQUES</a>
+				</li>
+				<li><i class="fas fa-calendar-alt" style="padding-right: 20px;"></i>
+					<a href="qjobs.html">QJOBS</a>
+				</li>
+			</ul>
+		</nav>		
+	</div><!-- end of side nav -->
+	<!-- end of header area -->
+	<div class="next-section" >
+		<div class="container">		
+			<!-- ============ -->
+			<div class="row">
+				<div class="col-md-4" style="height: 50vh; background-color: #202020; color: #fff; padding: 0px;">
+					<div class="d-flex align-items-start">
+					  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" style=" width:100%;">
+					    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Dashboard</button>
+					    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Order</button>
+					    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Accout Details</button>
+					    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Log Out</button>
+					  </div>					
+					</div>
+				</div>		
+				<div class="col-md-8" style="background-color: #181818; padding: 20px 25px;">
+				  <div class="tab-content" id="v-pills-tabContent">
+				    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+	                  <h2>Dashboard!</h2>
+	                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, mollitia.</p>				    	
+				    </div>
+				    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+		                <table class="table">
+		                    <thead class="table-dark">
+		                      <tr>
+		                        <th colspan="5">Order Details</th>
+		                      </tr>
+		                    </thead>
+		                    <thead>
+		                      <tr>
+		                        <th scope="col">Invice No</th>
+		                        <th scope="col">Date</th>
+		                        <th scope="col">Order Status</th>
+		                        <th scope="col">Order Total</th>
+		                        <th scope="col">Action</th>
+		                      </tr>
+		                    </thead>
+		                    <tbody></tbody>
+		                </table>				    	
+				    </div>
+				    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+	                  <h3>Account Details</h3>
+		                <form>
+		                    <div class="form-group">
+		                      <label for="exampleInputEmail1">First Name</label>
+		                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+		                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		                    </div>
+		                    <div class="form-group">
+		                      <label for="exampleInputEmail1">Last Name</label>
+		                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+		                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		                    </div>
+		                    <div class="form-group">
+		                      <label for="exampleInputEmail1">Email address</label>
+		                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+		                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		                    </div>
+		                    <div class="form-group">
+		                      <label for="exampleInputEmail1">Address</label>
+		                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+		                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		                    </div>
+		                    <div class="form-group">
+		                      <label for="exampleInputPassword1">Password</label>
+		                      <input type="password" class="form-control" id="exampleInputPassword1">
+		                    </div>
+		                    <div class="form-group form-check">
+		                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+		                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+		                    </div>
+		                    <button type="submit" class="btn" style="background-color: #101010; color:#fff;">Submit</button>
+		                </form>				    	
+				    </div>
+				    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"><h2>Log Out</h2></div>
+				  </div>					
+				</div>
+			</div>
+			<!-- ============ -->
+		</div>				
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row foot-mar-t">
+				<div class="col-md-4 col-sm-12">
+					<img src="images/logo.png" alt="">
+				</div>
+				<div class="col-md-4 col-sm-12 d-flex flex-column">
+					<h4 style="padding-left: 55px;">Links</h4>
+					<ul class="foot-nav-list d-flex flex-column">
+						<li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Home</a></li>
+						<li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Shop</a></li>
+						<li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>About us</a></li>
+						<li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Contact us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-12 follow" align="center">
+					<h4>Follow us</h4>
+					<div class="input-group d-flex flex-column pt-5">						
+						<input type="text" name="" id="" placeholder="email">
+						<button class="" style="border-radius: 25px;">Submit</button>
+					</div>
+					<div class="foot-so-icon">
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-linkedin-in"></i>
+						<i class="fab fa-instagram"></i>
+					</div>
+				</div>
+			</div>
+		</div><!-- end footer container -->
+		<div class="copyright">
+			<p>Copyright © 2021. All rights reserved By <a href="https://www.redrhinoz.com" style="text-decoration: none; color:#fff;">Red Rhinoz</a> Creative Software.</p>
+		</div>
+	</footer><!-- end of footer -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

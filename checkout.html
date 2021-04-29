@@ -8,11 +8,17 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<style>
+		form{
+			padding: 25px;
+		}
+		form input[type=checkbox]{
+			border: 1px solid red;
+		}
 		form input,select{
 			border: 1px solid red !important;
 			background-color: #0d0d0d !important;
 			border: 1px solid #444 !important;
-			color: #fff;
+			color: #fff !important;			
 		}
 		.list-group li{
 			border: 1px solid #444;
@@ -28,6 +34,20 @@
 			background-image: url('../images/five-img.jpg');
 			background-size: cover;
 			background-position: center;
+		}
+		.check-submit {
+    		color: #fff;
+	    	background-color: #0d0d0d;
+			padding: 10px 15px;
+			border: none; 
+			border-radius: 15px;
+		}		
+		.form-control:focus {
+		    color: #212529;
+		    background-color: #fff;
+		    border-color: #86b7fe;
+		    outline: 0;
+		    box-shadow:none !important;
 		}		
 	</style>
 </head>
@@ -172,7 +192,7 @@
 				</form>
 			 </div>
 			 <div class="col-md-8 order-md-1" style="background-color: #181818;">
-				<h4 class="mb-3">Billing address</h4>
+				<h4 class="p-4">Billing address</h4>
 				<form class="needs-validation" novalidate="">
 					<div class="row">
 					  <div class="col-md-6 mb-3">
@@ -315,7 +335,7 @@
 					  </div>
 					</div>
 					<hr class="mb-4">
-					<button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+					<button class="check-submit" type="submit">Continue to checkout</button>
 				</form>
 			 </div>
 			</div>			
