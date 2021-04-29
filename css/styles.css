@@ -130,7 +130,7 @@ body{
 	padding: 15px 10px;
 }
 /*end of slider area*/
-@media screen and (max-width: 450px){
+@media screen and (max-width: 375px){
 	.slider{height: 95vh;}
 	.slide-box{height: 60vh;}
 	.left-box{
